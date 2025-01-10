@@ -12,7 +12,7 @@
                         <div class="form-group">
                             <label>NIP</label>
                             <input type="number" class="form-control" name="nip">
-                        </div>
+                        </div>  
                    
                     
                       <div class="form-group">
@@ -44,6 +44,15 @@
                         <label for="foto">Upload Foto Karyawan</label>
                         <input type="file" class="form-control-file" id="foto" name="foto">
                     </div>
+                </div>
+                <div class="form-group">
+                        <label>Departement</label>
+                        <select name="departemen_id" class="custom-select">
+                            @foreach ($departemen as $item)
+                            <option value="{{ $item->id}}">{{ $item->nama_departemen}}</option>
+                                
+                            @endforeach
+                        </select>
                 </div>
                       
 

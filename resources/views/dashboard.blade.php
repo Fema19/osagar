@@ -1,7 +1,7 @@
 @extends('layouts/app')
 @section('content')
     <div class="row">
-        <h3>selamat datang di sisfo pegawai</h3>
+        <h3>Yokoso</h3>
         <!-- Earnings (Monthly) Card Example -->
     </div>
 

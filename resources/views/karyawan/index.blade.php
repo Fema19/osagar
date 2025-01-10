@@ -46,8 +46,9 @@
                                                 <th>Jenis Kelamin</th>
                                                 <th>Gaji Karyawan</th>
                                                 <th>Alamat</th>
+                                                <th>Departemen</th>
                                                 <th>Aksi</th>
-
+                                                    //
                                             </tr>
                                         </thead>
 
@@ -66,6 +67,7 @@
                                                     <td>{{ $karyawan->jenis_kelamin}}</td>
                                                     <td>{{ $karyawan->gaji_karyawan}}</td>
                                                     <td>{{ $karyawan->alamat}}</td>
+                                                    <td>{{ $karyawan->departemen['nama_departemen']}}</td>
                                                     
                                                     <td>
                                                         <a class="btn btn-sm btn-primary"

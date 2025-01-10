@@ -65,10 +65,23 @@
                             <label for="foto" >Upload Foto Karyawan</label>
                             <input type="file" id="foto" class="form-control-file" name="foto">
                         </div>
+                        <div class="form-group">
+                            <label for="departemen_id">Departemen</label>
+                            <select name="departemen_id" class="form-control">
+                                @foreach ($departemen as $item)
+                                    <option value="{{ $item->id }}" {{ old('departemen_id', $data->departemen_id) == $item->id ? 'selected' : '' }}>
+                                        {{ $item->nama_departemen }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                            
+                            
 
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Simpan</button>
                     </div>
+                    
                 </div>
             </div>
         </div>
