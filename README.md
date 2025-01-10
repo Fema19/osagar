@@ -11,7 +11,7 @@
 To Preview this project run
 
 ```bash
-git clone https://github.com/fauzymadani/laravelCrud.git
+https://github.com/Fema19/laravelnewwww.git
 ```
 
 install dependencie's
